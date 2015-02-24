@@ -9,13 +9,13 @@ if (!empty($_POST)){
   $_POST  = multiDimensionalArrayMap('cleanData', $_POST);
 
   //your email adress 
-  $emailTo ="yourmail@yoursite.com"; //"yourmail@yoursite.com";
+  $emailTo ="jean@codegearit.com"; //"yourmail@yoursite.com";
 
   //from email adress
-  $emailFrom ="contact@yoursite.com"; //"contact@yoursite.com";
+  $emailFrom ="contato@codegearit.com"; //"contact@yoursite.com";
 
   //email subject
-  $emailSubject = "Mail from Porta";
+  $emailSubject = "Contato feito através do site por: ".$_POST["name"];
 
   $name = $_POST["name"];
   $email = $_POST["email"];
@@ -32,9 +32,9 @@ if (!empty($_POST)){
 
  if($data['success'] == true){
 
-  $message = "NAME: $name<br>
-  EMAIL: $email<br>
-  COMMENT: $comment";
+  $message = "Nome: $name<br><br>
+  E-mail: $email<br><br>
+  Comentário: <br> $comment";
 
 
   $headers = "MIME-Version: 1.0" . "\r\n"; 

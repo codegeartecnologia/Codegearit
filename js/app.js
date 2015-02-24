@@ -1,11 +1,5 @@
 'use strict';
 
-/*
- * A Design by GraphBerry
- * Author: GraphBerry
- * Author URL: http://graphberry.com
- * License: http://graphberry.com/pages/license
- */
 jQuery(document).ready(function ($) {
 
     var lastId,
@@ -374,8 +368,8 @@ Sand mail
 
 function initializeMap() {
 
-    var lat = '44.8164056'; //Set your latitude.
-    var lon = '20.46090424'; //Set your longitude.
+    var lat = '-24.2443753'; //Set your latitude.
+    var lon = '-49.7071163'; //Set your longitude.
 
     var centerLon = lon - 0.0105;
 
